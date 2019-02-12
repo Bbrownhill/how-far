@@ -41,6 +41,7 @@ List of Major bodies:
  * Pluto
 
 Table of Moons(Named moons only):
+
 | Earth    | Mars   | Jupiter    | Saturn     | Uranus    | Neptune   | Pluto  |
 |----------|--------|------------|------------|-----------|-----------|--------|
 | The Moon | Phobos | Io         | Mimas      | Ariel     | Triton    | Charon |
