@@ -16,7 +16,7 @@ def get_requirements():
 
 setup(
     name='how_far',
-    version='1.0.0',
+    version='1.0.1',
     URL='https://github.com/sorcerermjolnir/how_far/',
     author='Robert Brownhill',
     author_email='rbrownhill@live.co.uk',
@@ -25,6 +25,7 @@ setup(
     description='Display realtime distances between planets',
     long_description=long_description,
     long_description_content_type='text/markdown',
+    include_package_data=True,
     packages=['src'],
     install_requires=get_requirements(),
     entry_points={
