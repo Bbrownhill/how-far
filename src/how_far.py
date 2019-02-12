@@ -29,10 +29,11 @@ def how_far():
 
 @how_far.command()
 @click.argument('target', type=choices, required=True)
-@click.option('--_from', '-f', type=choices, default='Earth')
-def to(target, _from):
-    center = f'500@{targets[_from]}' if _from is not 'Earth' else targets[_from]
-    # coordinates need to be in the format '###@###' unless the target is Earth
+@click.option('-f', '-from', type=choices, default='Earth')
+def to(target, f):
+    # the use of -f and -from in this manner is to avoid clashes with the `from` keyword
+    center = f'500@{targets[f]}' if f is not 'Earth' else targets[f]
+    # coordinates need to be in the format '###@###' unless the targeted center is Earth
     while True:
         t1 = Time.now()
         dt = TimeDelta(time_delta, format='sec')
@@ -47,7 +48,7 @@ def to(target, _from):
         for row in distances:
             t = Time(row['datetime_jd'], format='jd', scale='utc')
             range = row['range'] * au_to_km
-            s.enterabs(t.unix, 1, _display, argument=(target, _from, range))
+            s.enterabs(t.unix, 1, _display, argument=(target, f, range))
         s.run(blocking=True)
         # blocking is true to stop the loop repeating before all scheduled events have run
 
