@@ -9,7 +9,7 @@ How Far is a click application that gathers data from the JPL Horizons database 
 
 ## Installation
 
-To install from Pypy:
+To install from Pypi:
 Simply run:
 `pip install how_far`
 
@@ -22,6 +22,7 @@ Or to install from source:
 `how_far to <planet or moon> [-f/-from <other planet or moon>]`
 
 If the -f/-from option is not specified the centre point defaults to Earth.
+
 Please note: this CLI tool is case sensitive so remember to capitalise names.
 
 i.e. Jupiter instead of jupiter.
