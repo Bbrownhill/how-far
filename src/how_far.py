@@ -19,10 +19,21 @@ choices = click.Choice([k for k in targets.keys()])
 @click.group()
 def how_far():
     """
-    How far from here to there?
+    Welcome to How Far
+    \b
+    If you often wonder how far away is Mars right now or
+    about the current distance between Jupiter and Saturn?
+    Look no further!
 
-    how_far is a click application that gathers data from the JPL Horizons database and displays
-    a realtime output of the distance between to planetery bodies.
+    \b
+    How Far is a click application that gathers data from
+    the JPL Horizons database and displays a realtime
+    output of the distance between to planetery bodies.
+
+    \b
+    Usage: `how_far to <planet or moon> [-f/-from <other planet or moon>]`
+
+    If the -f/-from option is not secified the center point defaults to Earth.
     """
     to
 
