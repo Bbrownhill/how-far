@@ -10,7 +10,7 @@ import sys
 au_to_km = 149598000
 time_delta = 600  # ten minutes
 
-with open('targets.yml', 'r') as stream:
+with open('src/targets.yml', 'r') as stream:
     targets = yaml.load(stream)
 
 choices = click.Choice([k for k in targets.keys()])
