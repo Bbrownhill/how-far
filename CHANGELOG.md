@@ -4,7 +4,7 @@ Categories: Removed, Changed, Added, Deprecated, Fixed, Security, Nonfunctional
 
 ## Unreleased
 
-## 1.0.1 (11-03-19)
+## 1.0.2 (11-03-19)
 
 ### Changed
  - targets.yml location
