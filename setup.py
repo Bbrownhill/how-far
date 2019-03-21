@@ -1,4 +1,4 @@
-from distutils.core import setup
+from setuptools import setup
 from m2r import parse_from_file
 import os
 
@@ -16,7 +16,7 @@ def get_requirements():
 
 setup(
     name='how_far',
-    version='1.0.2',
+    version='1.0.3',
     URL='https://github.com/sorcerermjolnir/how_far/',
     author='Robert Brownhill',
     author_email='rbrownhill@live.co.uk',
@@ -25,8 +25,9 @@ setup(
     description='Display realtime distances between planets',
     long_description=readme,
     long_description_content_type='text/x-rst',
-    include_package_data=True,
     packages=['src'],
+    package_data={'': ['targets.yml', 'src/targets.yml']},
+    include_package_data=True,
     install_requires=get_requirements(),
     entry_points={
         'console_scripts': [

@@ -2,3 +2,4 @@ astropy==3.1.1
 astroquery==0.3.9
 Click==7.0
 PyYAML==3.13
+m2r==0.2.1
