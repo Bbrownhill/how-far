@@ -10,7 +10,7 @@ import sys
 
 
 targets_path = os.path.dirname(os.path.abspath(__file__))
-print(targets_path)
+
 au_to_km = 149598000
 time_delta = 600  # ten minutes
 

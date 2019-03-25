@@ -16,7 +16,7 @@ def get_requirements():
 
 setup(
     name='how_far',
-    version='1.0.3',
+    version='1.0.3post1',
     URL='https://github.com/sorcerermjolnir/how_far/',
     author='Robert Brownhill',
     author_email='rbrownhill@live.co.uk',

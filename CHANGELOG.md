@@ -4,7 +4,7 @@ Categories: Removed, Changed, Added, Deprecated, Fixed, Security, Nonfunctional
 
 ## Unreleased
 
-## 1.0.3 (21-03-19)
+## 1.0.3post1 (21-03-19)
 
 ### Fixed
  - how_far.py now gets the absolute path of the targets.yml in the package
