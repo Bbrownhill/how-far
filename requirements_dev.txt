@@ -3,3 +3,6 @@ astroquery==0.3.9
 Click==7.0
 PyYAML==3.13
 m2r==0.2.1
+ipdb
+flake8==3.7.7
+twine==1.13.0

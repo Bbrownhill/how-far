@@ -1,16 +1,20 @@
 from astroquery.jplhorizons import Horizons
 from astropy.time import Time
 from astropy.time import TimeDelta
+import os
 import click
 import yaml
 import time
 import sched
 import sys
 
+
+targets_path = os.path.dirname(os.path.abspath(__file__))
+
 au_to_km = 149598000
 time_delta = 600  # ten minutes
 
-with open('targets.yml', 'r') as stream:
+with open(f'{targets_path}/targets.yml', 'r') as stream:
     targets = yaml.load(stream)
 
 choices = click.Choice([k for k in targets.keys()])
